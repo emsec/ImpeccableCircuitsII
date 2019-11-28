@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% COMPANY:		Ruhr University Bochum, Embedded Security
+%% AUTHOR:		Aein Rezaei Shahmirzadi, Shahram Rasoolzadeh, Amir Moradi "Impeccable Circuits II" 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Copyright (c) 2019, Aein Rezaei Shahmirzadi, Amir Moradi 
+%% All rights reserved.
+%%
+%% BSD-3-Clause License
+%% Redistribution and use in source and binary forms, with or without
+%% modification, are permitted provided that the following conditions are met:
+%%     * Redistributions of source code must retain the above copyright
+%%       notice, this list of conditions and the following disclaimer.
+%%     * Redistributions in binary form must reproduce the above copyright
+%%       notice, this list of conditions and the following disclaimer in the
+%%       documentation and/or other materials provided with the distribution.
+%%     * Neither the name of the copyright holder, their organization nor the
+%%       names of its contributors may be used to endorse or promote products
+%%       derived from this software without specific prior written permission.
+%% 
+%% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+%% ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+%% WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+%% DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTERS BE LIABLE FOR ANY
+%% DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+%% (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+%% LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+%% ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+%% (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+%% SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+max_no_of_threads   % maximum number of threads *for parallel operation*
+30
+
+clock   % name of the clock signal
+clk
+
+max_clock_cycle % maximum number of clock cycles per run before checking the done condition
+40
+
+no_of_inputs % number of primary inputs
+3
+
+no_of_initial_clock_cycles % number of clock cycles to initiate the run (start of encryption)
+2
+
+[127:0] Key   128'h18F4EEBDFCED7841D9E0E38CFE6A9405
+        rst   1'b1
+		EncDec 1'b0
+       
+[127:0] Key   128'h18F4EEBDFCED7841D9E0E38CFE6A9405
+        rst   1'b0
+		EncDec 1'b0
+
+no_of_random_inputs % number of inputs which should be selected randomly
+1
+[63:0]  Input
+
+end_condition  % the condition to check to terminate the run (e.g., done signal is high)
+done 1'b1
+
+end_wait_cycles  % number of clock cycles to wait after the end_condition 
+1
+
+no_of_outputs  % number of primary outputs and the way it should be printed 64'h (64-bit hex), 2'b (2-bit binary)
+1
+[63:0] Output 64'h
+
+faul_injection_exclude   % those modules which should be exclused for fault injectsion (all : to exclude them all) (# : followed by # module names from hierarchy "cell_report_file")
+all
+
+faul_injection_include   % those modules which should be included for fault injectsion (all : to exclude them all) (# : followed by # module names from hierarchy "cell_report_file")
+1
+OutputMajorityVoting/U490
+
+number_of_random_fault_injections  % number of simulations for each a fault is injected
+1000
+
+fault_injection_type    % type of fault injection: stuck_at_0  stuck_at_1  toggle
+stuck_at_1
+
+number_of_target_clock_cycles  % number of clock cycles to inject the faults followed by the targeted clock cycles
+1                              % 2 target clock cycle
+1                              % clock cycle 1 is targeted
+
+max_no_faults_per_run   % maximum number of injected faults per run (encryption)
+1
+
+min_no_faults_per_run   % minumum number of injected faults per run (encryption)
+1
+
+max_no_faults_per_cycle % maximum number of injected faults per clock cycle
+1
+
+min_no_faults_per_cycle % minumum number of injected faults per clock cycle
+1
+
+% have fun!
