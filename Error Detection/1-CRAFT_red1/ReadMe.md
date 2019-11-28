@@ -6,4 +6,4 @@ To evaluate the design, we made use of VerFI(ver 2 Beta) for diagnosis (https://
 
 - sim.txt: it defines all simulation settings. In particular, it sets the tool to inject single-bit stuck-at-0 fault into the S-box of the design at the 29th clock cycle.
 
-The result of the simulation (which took a couple of seconds using 30 CPU cores) can be seen in the "SimulationResult" folder. The "Result.txt" can be used for mounting SIFA.
+The result of the simulation (which took a couple of seconds using 30 CPU cores) can be seen in the "SimulationResult" folder. The "Result.txt" can be used to mount SIFA.
