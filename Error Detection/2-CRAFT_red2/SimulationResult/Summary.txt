@@ -1,0 +1,10 @@
+0000:01 Total: 2047  Ineffective: 1018  Detected: 1030  Non-detected: 0  RunTimeOver: 0
+0000:02 Total: 4095  Ineffective: 2058  Detected: 2037  Non-detected: 0  RunTimeOver: 0
+0000:03 Total: 6143  Ineffective: 3017  Detected: 3126  Non-detected: 0  RunTimeOver: 0
+0000:04 Total: 8191  Ineffective: 4036  Detected: 4155  Non-detected: 0  RunTimeOver: 0
+0000:05 Total: 10239  Ineffective: 5054  Detected: 5185  Non-detected: 0  RunTimeOver: 0
+0000:05 Total: 12287  Ineffective: 6087  Detected: 6200  Non-detected: 0  RunTimeOver: 0
+0000:06 Total: 14335  Ineffective: 7093  Detected: 7242  Non-detected: 0  RunTimeOver: 0
+0000:07 Total: 16383  Ineffective: 8127  Detected: 8256  Non-detected: 0  RunTimeOver: 0
+0000:08 Total: 18431  Ineffective: 9134  Detected: 9297  Non-detected: 0  RunTimeOver: 0
+0000:09 Total: 20000  Ineffective: 9914  Detected: 10086  Non-detected: 0  RunTimeOver: 0
