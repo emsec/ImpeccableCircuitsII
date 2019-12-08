@@ -71,10 +71,10 @@ print_detected      % whether the detailed result of detected faults should be p
 1
 
 print_ineffective   % whether the detailed result of ineffective faults should be printed 1/0 
-1
+0
 
-print_runtimeerror   % whether the detailed result of faults led to run-time-error should be printed 1/0 
-1
+print_runtime_over  % whether the detailed result of faults led to run-time-over should be printed 1/0 
+0
 
 % have fun!
 

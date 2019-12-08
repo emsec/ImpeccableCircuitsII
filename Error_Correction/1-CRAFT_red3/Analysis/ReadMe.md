@@ -1,4 +1,6 @@
-To evaluate the design, we made use of VerFI(ver 2 Beta) for diagnosis (https://github.com/emsec/VerFI/tree/master/VerFI_for_diagnosis). This analysis contains the following files:
+To evaluate the design, we made use of VerFI(ver 2 Beta) for diagnosis (https://github.com/emsec/VerFI/tree/master/VerFI_for_diagnosis/BitSliced). This analysis contains the following files:
+
+- Library.txt: this file includes the specification of cells used in NANG45 ASIC library
 
 - design.v: this file is the net-list of the RTL code, which has been synthesized by Design Compiler using NANG45 ASIC standard cell library. Note that the ungrouped net-list should be generated.
 

@@ -47,6 +47,7 @@ exhaustive
 number_of_random_fault_injections  % number of simulations for each a fault is injected (this number is relevant only for fault_injection_method=random)
 10000
 
+
 number_of_target_clock_cycles  % number of clock cycles to inject the faults followed by the targeted clock cycles
 2                              % one target clock cycle
 5                              % clock cycle 5 is targeted
@@ -72,10 +73,10 @@ print_detected      % whether the detailed result of detected faults should be p
 1
 
 print_ineffective   % whether the detailed result of ineffective faults should be printed 1/0 
-1
+0
 
-print_runtimeerror   % whether the detailed result of faults led to run-time-error should be printed 1/0 
-1
+print_runtime_over  % whether the detailed result of faults led to run-time-over should be printed 1/0 
+0
 
 % have fun!
 

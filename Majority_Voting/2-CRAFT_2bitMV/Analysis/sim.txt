@@ -83,7 +83,7 @@ stuck_at_1
 number_of_target_clock_cycles  % number of clock cycles to inject the faults followed by the targeted clock cycles
 2                              % 2 target clock cycle
 29                             % clock cycle 29 is targeted
-32
+32                             % clock cycle 32 is targeted
 
 max_no_faults_per_run   % maximum number of injected faults per run (encryption)
 2

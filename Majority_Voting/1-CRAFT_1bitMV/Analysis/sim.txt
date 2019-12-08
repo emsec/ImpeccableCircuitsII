@@ -46,11 +46,11 @@ no_of_initial_clock_cycles % number of clock cycles to initiate the run (start o
 
 [127:0] Key   128'h18F4EEBDFCED7841D9E0E38CFE6A9405
         rst   1'b1
-		EncDec 1'b0
+	EncDec 1'b0
        
 [127:0] Key   128'h18F4EEBDFCED7841D9E0E38CFE6A9405
         rst   1'b0
-		EncDec 1'b0
+	EncDec 1'b0
 
 no_of_random_inputs % number of inputs which should be selected randomly
 1
@@ -80,8 +80,8 @@ fault_injection_type    % type of fault injection: stuck_at_0  stuck_at_1  toggl
 stuck_at_1
 
 number_of_target_clock_cycles  % number of clock cycles to inject the faults followed by the targeted clock cycles
-1                              % 2 target clock cycle
-1                              % clock cycle 1 is targeted
+1                              % 1 target clock cycle
+2                              % clock cycle 2 is targeted
 
 max_no_faults_per_run   % maximum number of injected faults per run (encryption)
 1

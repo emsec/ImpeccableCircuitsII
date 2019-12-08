@@ -58,7 +58,7 @@ end_condition  % the condition to check to terminate the run (e.g., done signal 
 done 1'b1
 
 end_wait_cycles  % number of clock cycles to wait after the end_condition 
-0
+1
 
 no_of_outputs  % number of primary outputs and the way it should be printed 64'h (64-bit hex), 2'b (2-bit binary)
 1
